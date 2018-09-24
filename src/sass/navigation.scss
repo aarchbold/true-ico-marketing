@@ -6,4 +6,107 @@
     min-height: 110px;
     box-sizing: border-box;
     padding: 30px;
+    font-size: 14px;
+}
+
+.top-nav__menu {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.top-nav__item {
+    position: relative;
+    margin-left: 35px;
+    transition: all 0.2s;
+    display: inline-block;
+    font-size: 14px;
+    color: $color-main-font;
+    a, .language-selector__current {
+        font-size: 14px;
+        color: $color-main-font;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:before {
+            transition: all 0.2s ease-in-out 0s;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -5px;
+            left: 0;
+            background-color: $color-main-font;
+            visibility: hidden;
+            transform: scaleX(0);
+        }
+        &:hover {
+            &:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+.language-selector {
+    position: relative;
+    cursor: pointer;
+}
+
+.language-selector__current {
+    position: relative;
+    padding: 0 24px 0 0;
+}
+
+.language-selector__arrow {
+    transition: all 0.2s;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    border: solid $color-main-font;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+}
+
+.language-selector__layer {
+    display: none;
+    transition: all 0.1s;
+    position: absolute;
+    right: -1px;
+    top: 16px;
+    background-color: white;
+    border-radius: 4px;
+    min-width: 50px;
+    padding: 6px 10px;
+    &.-active {
+        transform: translateY(10px);
+    }
+    &:before {
+        position: absolute;
+        content: ' ';
+        top: -6px;
+        right: 0;
+        width: 0; 
+        height: 0; 
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid white;
+    }
+}
+
+.language-selector__item {
+    margin-left: 35px;
+    transition: all 0.2s;
+    display: inline-block;
+    text-align: right;
+    color: $color-sidebar-font;
+    text-decoration: none;
+    opacity: 1;
+    line-height: 1.4;
+    font-size: 14px;
+    &:hover {
+        opacity: 0.6;
+    }
 }
