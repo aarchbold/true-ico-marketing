@@ -170,9 +170,9 @@ section {
 
 .home-intro {
   min-height: 1024px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#DEFBFF), to(white));
-  background-image: -o-linear-gradient(top left, #DEFBFF, white);
-  background-image: linear-gradient(to bottom right, #DEFBFF, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DEFBFF), color-stop(60%, white));
+  background-image: -o-linear-gradient(#DEFBFF, white 60%);
+  background-image: linear-gradient(#DEFBFF, white 60%);
 }
 
 .presale-countdown {
@@ -329,6 +329,12 @@ section {
   opacity: 0.6;
 }
 
+.home-parallax {
+  -webkit-transform: all 0.2s;
+  -ms-transform: all 0.2s;
+  transform: all 0.2s;
+}
+
 .header-bg-1 {
   position: absolute;
   bottom: 0;
@@ -342,24 +348,30 @@ section {
 
 .header-bg-2 {
   position: absolute;
-  bottom: 140px;
+  bottom: 80px;
   left: 0;
   width: 100%;
   height: 355px;
   background: transparent url(../images/bgs/bg-home2.png) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 5;
+  -webkit-transform: translateY(-84.2009px);
+  -ms-transform: translateY(-84.2009px);
+  transform: translateY(-84.2009px);
 }
 
 .header-bg-3 {
   position: absolute;
-  bottom: 220px;
+  bottom: 160px;
   left: 0;
   width: 100%;
   height: 397px;
   background: transparent url(../images/bgs/bg-home3.png) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 4;
+  -webkit-transform: translateY(-77.9118px);
+  -ms-transform: translateY(-77.9118px);
+  transform: translateY(-77.9118px);
 }
 
 .header-bg-4 {
@@ -371,6 +383,9 @@ section {
   background: transparent url(../images/bgs/bg-home4.png) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 3;
+  -webkit-transform: translateY(-65.3119px);
+  -ms-transform: translateY(-65.3119px);
+  transform: translateY(-65.3119px);
 }
 
 .header-bg-5 {
@@ -382,4 +397,7 @@ section {
   background: transparent url(../images/bgs/bg-home5.png) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 2;
+  -webkit-transform: translateY(-44.6743px);
+  -ms-transform: translateY(-44.6743px);
+  transform: translateY(-44.6743px);
 }
