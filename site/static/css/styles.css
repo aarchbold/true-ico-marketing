@@ -115,6 +115,7 @@ body {
   line-height: 1.2;
   z-index: 1000;
   position: relative;
+  min-height: 700px;
 }
 .home-header h1 {
   font-size: 45px;
@@ -122,6 +123,16 @@ body {
 .home-header p {
   font-size: 18px;
   padding: 30px 100px 30px 0;
+}
+@media (max-width: 1240px) {
+  .home-header {
+    padding: 40px 160px 50px 160px;
+  }
+}
+@media (max-width: 952px) {
+  .home-header {
+    padding: 40px 60px 50px 60px;
+  }
 }
 
 .home-header__cta .button {
@@ -169,6 +180,7 @@ section {
 }
 
 .home-intro {
+  position: relative;
   min-height: 1024px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#DEFBFF), color-stop(60%, white));
   background-image: -o-linear-gradient(#DEFBFF, white 60%);
@@ -176,7 +188,8 @@ section {
 }
 
 .presale-countdown {
-  margin-top: 225px;
+  position: absolute;
+  bottom: -200px;
   max-width: 535px;
   width: 100%;
   min-height: 300px;
@@ -191,6 +204,11 @@ section {
   text-transform: uppercase;
   color: #25247C;
 }
+@media (max-width: 1240px) {
+  .presale-countdown {
+    bottom: -100px;
+  }
+}
 
 .presale-countdown__header {
   font-size: 20px;
@@ -199,6 +217,32 @@ section {
 .presale-countdown__subheader {
   font-size: 36px;
   padding: 10px 0 40px;
+}
+
+.presale-countdown__counter {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.presale-countdown__counter:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.presale-countdown__slot {
+  width: 25%;
+  float: left;
+  font-size: 48px;
+}
+
+.presale-countdown__label {
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.home-video {
+  min-height: 900px;
 }
 
 .top-nav {
@@ -335,6 +379,15 @@ section {
   transform: all 0.2s;
 }
 
+.home-parallax__mask {
+  position: absolute;
+  background-color: white;
+  bottom: -150px;
+  height: 300px;
+  width: 100%;
+  z-index: 5;
+}
+
 .header-bg-1 {
   position: absolute;
   bottom: 0;
@@ -344,6 +397,11 @@ section {
   background: transparent url(../images/bgs/bg-home1.png) 50% 50% no-repeat;
   background-size: 100%;
   z-index: 6;
+}
+@media (max-width: 1240px) {
+  .header-bg-1 {
+    bottom: 40px;
+  }
 }
 
 .header-bg-2 {

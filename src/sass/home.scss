@@ -21,12 +21,21 @@ body {
     line-height: 1.2;
     z-index: 1000;
     position: relative;
+    min-height: 700px;
     h1 {
         font-size: 45px;
     }
     p {
         font-size: 18px;
         padding: 30px 100px 30px 0;
+    }
+    @media (max-width: 1240px) {
+        // min-height: 900px;
+        padding: 40px 160px 50px 160px;
+    }
+    @media (max-width: 952px) {
+        // min-height: 900px;
+        padding: 40px 60px 50px 60px;
     }
 }
 
@@ -72,12 +81,17 @@ section {
 }
 
 .home-intro {
+    position: relative;
     min-height: 1024px;
     background-image: linear-gradient(#DEFBFF, white 60%);
+    @media (max-width: 1240px) {
+        // min-height: 900px;
+    }
 }
 
 .presale-countdown {
-    margin-top: 225px;
+    position: absolute;
+    bottom: -200px;
     max-width: 535px;
     width: 100%;
     min-height: 300px;
@@ -89,6 +103,10 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: $color-main-font;
+    @media (max-width: 1240px) {
+        // min-height: 900px;
+        bottom: -100px
+    }
 }
 
 .presale-countdown__header {
@@ -97,4 +115,30 @@ section {
 .presale-countdown__subheader {
     font-size: 36px;
     padding: 10px 0 40px;
+}
+
+.presale-countdown__counter {
+    width: 100%;
+    margin-bottom: 40px;
+    &:after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+}
+
+.presale-countdown__slot {
+    width: 25%;
+    float: left;
+    font-size: 48px;
+}
+
+.presale-countdown__label {
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.home-video {
+    min-height: 900px;
 }

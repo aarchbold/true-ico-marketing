@@ -4,6 +4,15 @@
     transform: all 0.2s;
 }
 
+.home-parallax__mask {
+    position: absolute;
+    background-color: white;
+    bottom: -150px;
+    height: 300px;
+    width: 100%;
+    z-index: 5;
+}
+
 .header-bg-1 {
     position: absolute;
     bottom: 0;
@@ -13,6 +22,10 @@
     background: transparent url(../images/bgs/bg-home1.png) 50% 50% no-repeat;
     background-size: 100%;
     z-index: 6;
+    @media (max-width: 1240px) {
+        // min-height: 900px;
+        bottom: 40px
+    }
 }
 
 .header-bg-2 {
