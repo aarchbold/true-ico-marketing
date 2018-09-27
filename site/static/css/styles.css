@@ -253,6 +253,76 @@ section {
   padding-bottom: 40px;
 }
 
+.social-media {
+  padding: 40px 160px;
+  line-height: 1.2;
+  z-index: 1000;
+  position: relative;
+  min-height: 700px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.social-media h2 {
+  font-size: 45px;
+  margin-top: 20%;
+}
+.social-media p {
+  font-size: 20px;
+  padding: 30px 60px 30px 0;
+}
+
+.social-media__row:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.social-media__col {
+  float: left;
+  width: 55%;
+}
+.social-media__col:last-child {
+  width: 45%;
+}
+
+.social-media__infographic {
+  position: relative;
+  height: 510px;
+  background: url(../images/bgs/bg-social-media.png) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.social-media__infographic .cyclist {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  width: 200px;
+}
+
+.social-media__tag {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+  min-width: 266px;
+  min-height: 85px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 16px 16px 16px 80px;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.social-media__tag img {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+}
+.social-media__tag strong {
+  font-size: 24px;
+  display: block;
+}
+
 .top-nav {
   position: relative;
   width: 100%;
