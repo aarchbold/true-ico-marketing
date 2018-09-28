@@ -1,0 +1,113 @@
+/* Roadmap styles
+*/
+
+.roadmap {
+    padding: 160px 0;
+}
+
+.roadmap-header {
+    padding: 40px 300px 50px 160px;
+    line-height: 1.2;
+    h2 {
+        text-transform: uppercase;
+        font-size: 45px;
+    }
+    @media (max-width: 1240px) {
+        // min-height: 900px;
+        padding: 40px 160px 50px 160px;
+    }
+    @media (max-width: 952px) {
+        // min-height: 900px;
+        padding: 40px 60px 50px 60px;
+    }
+}
+
+.roadmap-map {
+    position: relative;
+    height: 230px;
+    &:after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+}
+
+.roadmap-map__item {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14.22%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.roadmap-map__label {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.roadmap-map__description {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    line-height: 1.2;
+}
+
+.roadmap-map__bullet--mask {
+    height: 50px;
+}
+
+.roadmap-map__bullet {
+    transition: all 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: $color-roadmap;
+    box-shadow: 2px 3px 25px -3px rgba(108, 73, 255, 0.6);
+    &.-bullet2 {
+        width: 26px;
+        height: 26px;
+    }
+    &.-bullet3 {
+        width: 30px;
+        height: 30px;
+    }
+    &.-bullet4 {
+        width: 36px;
+        height: 36px;
+    }
+    &.-bullet5 {
+        width: 46px;
+        height: 46px;
+    }
+    &.-bullet6 {
+        width: 56px;
+        height: 56px;
+    }
+    &.-bullet7 {
+        width: 84px;
+        height: 84px;
+    }
+}
+
+.roadmap-map__line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    border-top: 1px solid $color-roadmap;
+}
+
+
+
+

@@ -212,18 +212,19 @@ section {
     background-size: 100%;
     .cyclist {
         position: absolute;
-        bottom: 0;
-        left: 80px;
-        width: 200px;
+        bottom: -80px;
+        left: 62px;
+        width: 258px;
     }
 }
 
 .social-media__tag {
+    transition: all 0.2s;
     position: relative;
     display: inline-block;
     background-color: white;
     box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.2);
-    min-width: 266px;
+    min-width: 260px;
     min-height: 85px;
     box-sizing: border-box;
     padding: 16px 16px 16px 80px;
@@ -238,5 +239,21 @@ section {
     strong {
         font-size: 24px;
         display: block;
+    }
+    &.-leaks {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    &.-brother {
+        position: absolute;
+        left: 50%;
+        top: 60px;
+    }
+    &.-fakenews {
+        position: absolute;
+        left: 60%;
+        top: 55%;
     }
 }

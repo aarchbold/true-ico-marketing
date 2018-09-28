@@ -1,0 +1,104 @@
+/* Cap styles
+*/
+
+.market-cap {
+    box-sizing: border-box;
+    padding: 0 160px 50px 160px;
+}
+
+.current-stage__label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-left: 10px;
+}
+
+.current-stage {
+    position: relative;
+    border-radius: 26px;
+    box-shadow: 1px 2px 20px -1px rgba(108,73,255,0.4);
+    box-sizing: border-box;
+    padding: 40px 100px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    background-color: white;
+}
+
+.current-stage__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 1px 2px 20px -1px rgba(108,73,255,0.4);
+    box-sizing: border-box;
+    border-radius: 26px;
+}
+
+.current-stage__header {
+    font-size: 24px;
+}
+
+.current-stage__subheader {
+    font-size: 18px;
+    padding: 40px 0 80px;
+    span {
+        padding: 0 10px;
+    }
+}
+
+.current-stage__meter {
+    width: 100%;
+    height: 8px;
+    border-radius: 9px;
+    background-color: $color-cap-bg;
+}
+
+.current-stage__widget {
+    height: 8px;
+    width: 50%;
+    border-radius: 9px;
+    background-color: $color-cap-meter;
+}
+
+.current-stage__bullet {
+    margin-top: 26px;
+    text-align: left;
+    li {
+        position: relative;
+        font-size: 18px;
+        line-height: 2.2;
+        padding-left: 20px;
+        &.-active {
+            &:before {
+                background-color: $color-cap-meter;
+            }  
+        }
+        &:before {
+            content: ' ';
+            position: absolute;
+            top: 14px;
+            left: 0;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: $color-cap-bg;
+        }
+    }
+}
+
+.current-stage__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.current-stage__help {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+
