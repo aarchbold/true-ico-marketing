@@ -27,3 +27,25 @@ $(function(){
         });
     });
 });
+
+$(document).ready(function(){
+    $('#newsCarousel').slick({
+        prevArrow: $('.news-carousel__nav.-previous'),
+        nextArrow: $('.news-carousel__nav.-next'),
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                  slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 815,
+                settings: {
+                  slidesToShow: 1,
+                }
+            }
+        ]
+    });
+});

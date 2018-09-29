@@ -26,3 +26,11 @@ button, .button {
     background-color: $color-button-background;
     color: $color-alternate-font;
 }
+
+.button-news {
+    box-shadow: none;
+    background-color: $color-news-button;
+    color: white;
+    font-size: 15px;
+    padding: 16px 20px;
+}
