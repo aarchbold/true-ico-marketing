@@ -887,3 +887,92 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Team styles
+*/
+.true-team {
+  padding: 0 160px 40px;
+  box-sizing: border-box;
+}
+.true-team h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.team-protraits {
+  padding: 40px 0;
+}
+.team-protraits:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.team-protraits-col {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  transform: rotate(-45deg);
+}
+
+.team-portraits__item {
+  position: relative;
+  margin: 50px auto 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 1px 2px 20px -1px rgba(108, 73, 255, 0.4);
+}
+
+.team-portraits__item--hover {
+  transition: all 0.25s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  background-color: #4B49FF;
+  opacity: 0;
+}
+.team-portraits__item--hover:hover {
+  opacity: 0.9;
+}
+.team-portraits__item--hover:hover .team-portraits__item--bio {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.team-portraits__item--bio {
+  position: absolute;
+  transition: all 0.25s;
+  top: 50%;
+  transform: translateY(50px) rotate(45deg);
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  line-height: 1.6;
+}
+
+.team-portraits__item--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(45deg);
+}
+.team-portraits__item--image.-bret {
+  left: -8px;
+  top: -5px;
+  background: transparent url(../images/portraits/bret.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.team-portraits__item--image.-dmitri {
+  left: 2px;
+  top: -2px;
+  background: transparent url(../images/portraits/dmitri.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
