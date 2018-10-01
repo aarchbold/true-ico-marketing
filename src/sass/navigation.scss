@@ -10,9 +10,10 @@
 }
 
 .top-nav__menu {
-    position: absolute;
-    top: 45px;
-    right: 30px;
+    float: right;
+    @media (max-width: $breakpoint-phablet) {
+        display: none;
+    }
 }
 
 .top-nav__item {
@@ -22,7 +23,7 @@
     display: inline-block;
     font-size: 14px;
     color: $color-main-font;
-    a, .language-selector__current {
+    .top-nav__link, .language-selector__current {
         font-size: 14px;
         color: $color-main-font;
         text-decoration: none;
@@ -39,7 +40,7 @@
             visibility: hidden;
             transform: scaleX(0);
         }
-        &:hover {
+        &:hover, &:active {
             &:before {
                 visibility: visible;
                 transform: scaleX(1);
@@ -51,11 +52,50 @@
 .language-selector {
     position: relative;
     cursor: pointer;
+    float: right;
+    @media (max-width: $breakpoint-phablet) {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 16px;
+        width: 100%;
+        right: 0;
+        font-size: 18px;
+        text-align: right;
+    }
 }
 
 .language-selector__current {
     position: relative;
     padding: 0 24px 0 0;
+    &:active {
+        outline: none;
+    }
+    @media (max-width: $breakpoint-phablet) {
+        float: right;
+        border-radius: 5px;
+        position: relative;
+        padding: 6px 34px 6px 4px;
+        width: 45px;
+        border: 1px solid $color-main-font;
+        margin-right: 20px;
+    }
+}
+
+.language-selector__current span {
+	@media (max-width: $breakpoint-phablet) {
+    	margin-right: -5px;
+	}
+}	
+
+.language-selector__flag {
+	position: relative;
+    display: inline-block;
+    width: 12px;
+    padding-right: 4px;
+    @media (max-width: $breakpoint-phablet) {
+    	width: 17px;
+	}
 }
 
 .language-selector__arrow {
@@ -68,18 +108,31 @@
     display: inline-block;
     padding: 4px;
     transform: rotate(45deg);
+    &.-active {
+        top: 6px;
+        transform: rotate(225deg);
+        @media (max-width: $breakpoint-phablet) {
+            top: 12px;
+        }
+    }
+    @media (max-width: $breakpoint-phablet) {
+        top: 8px;
+        right: 12px;
+    }
 }
 
 .language-selector__layer {
     display: none;
     transition: all 0.1s;
     position: absolute;
-    right: -1px;
+    right: -30px;
     top: 16px;
     background-color: white;
-    border-radius: 4px;
-    min-width: 50px;
-    padding: 6px 10px;
+    border-radius: 10px;
+    min-width: 88px;
+    padding: 15px 20px;
+    z-index: 9000;
+    box-shadow: 1px 1px 8px -2px rgba(108, 73, 255, 0.4);
     &.-active {
         transform: translateY(10px);
     }
@@ -87,26 +140,63 @@
         position: absolute;
         content: ' ';
         top: -6px;
-        right: 0;
+        right: 52px;
         width: 0; 
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 8px solid white;
     }
+    @media (max-width: $breakpoint-phablet) {
+        width: 100%;
+        top: 24px;
+        right: 0;
+        border-radius: 0px;
+        box-sizing: border-box;
+        padding: 0;
+        &.-active {
+            transform: translateY(24px);
+        }
+    }
 }
 
 .language-selector__item {
-    margin-left: 35px;
+    position: relative;
     transition: all 0.2s;
-    display: inline-block;
-    text-align: right;
+    display: block;
+    text-align: left;
     color: $color-sidebar-font;
     text-decoration: none;
     opacity: 1;
-    line-height: 1.4;
-    font-size: 14px;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-right: 4px;
     &:hover {
         opacity: 0.6;
+    }
+    .language-selector__check {   
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+        top: 6px;
+        width: 21px;
+        @media (max-width: $breakpoint-phablet) {
+            top: 20px;
+            right: 49%;
+            width: 30px;
+            transform: translateX(50px);
+        }
+    }
+    &.-active {
+        img {
+            display: inline-block;
+        }
+    }
+    @media (max-width: $breakpoint-phablet) {
+        padding: 12px;
+        font-size: 22px;
+        border-bottom: 1px solid #C7C6C6;
+        text-align: center;
     }
 }

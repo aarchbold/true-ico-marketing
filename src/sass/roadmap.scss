@@ -159,7 +159,44 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
+        }
+    }
+}
+
+.roadmap-graphs__item {
+    &.-red {
+        &:before {
             border: 3px solid #FF496F;
+        }
+    }
+    &.-blue {
+        &:before {
+            border: 3px solid #4B49FF;
+        }
+    }
+    &.-lightblue {
+        &:before {
+            border: 3px solid #3EAEFF;
+        }
+    }
+    &.-lightgreen {
+        &:before {
+            border: 3px solid #7ED321;
+        }
+    }
+    &.-darkgreen {
+        &:before {
+            border: 3px solid #26CE93;
+        }
+    }
+    &.-yellow {
+        &:before {
+            border: 3px solid #F8E71C;
+        }
+    }
+    &.-grey {
+        &:before {
+            border: 3px solid #9B9B9B;
         }
     }
 }
@@ -177,7 +214,6 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            border: 3px solid #FF496F;
         }
     }
 }
