@@ -89,7 +89,13 @@ section {
     }
 }
 
+.home-header-scroller {
+    transition: all 0.2s;
+    position: relative;
+}
+
 .presale-countdown {
+    transition: all 0.25s;
     position: absolute;
     bottom: -200px;
     max-width: 535px;
@@ -103,6 +109,7 @@ section {
     text-align: center;
     text-transform: uppercase;
     color: $color-main-font;
+    // transform: translateX(-1000px);
     @media (max-width: 1240px) {
         // min-height: 900px;
         bottom: -100px
