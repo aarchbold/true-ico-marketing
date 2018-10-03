@@ -142,6 +142,12 @@ body {
 .home-header__cta .button {
   margin-right: 20px;
 }
+@media (max-width: 770px) {
+  .home-header__cta .button {
+    font-size: 16px;
+    padding: 14px 40px;
+  }
+}
 
 .home-logo {
   display: block;
@@ -199,6 +205,14 @@ section {
     bottom: -100px;
   }
 }
+@media (max-width: 770px) {
+  .presale-countdown {
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 40px;
+  }
+}
 
 .presale-countdown__header {
   font-size: 20px;
@@ -237,6 +251,11 @@ section {
   background-color: white;
   z-index: 2;
 }
+@media (max-width: 770px) {
+  .home-video {
+    min-height: 760px;
+  }
+}
 
 .home-video__container {
   position: absolute;
@@ -272,6 +291,11 @@ section {
   font-size: 20px;
   padding: 30px 60px 30px 0;
 }
+@media (max-width: 770px) {
+  .social-media {
+    padding: 40px 60px 50px 60px;
+  }
+}
 
 .social-media__row:after {
   content: ' ';
@@ -281,10 +305,10 @@ section {
 
 .social-media__col {
   float: left;
-  width: 55%;
+  width: 52%;
 }
 .social-media__col:last-child {
-  width: 45%;
+  width: 48%;
 }
 
 .social-media__infographic {
@@ -296,8 +320,15 @@ section {
 .social-media__infographic .cyclist {
   position: absolute;
   bottom: -80px;
-  left: 62px;
+  left: 40px;
   width: 258px;
+}
+@media (max-width: 770px) {
+  .social-media__infographic .cyclist {
+    bottom: -85px;
+    left: -30px;
+    width: 66%;
+  }
 }
 
 .social-media__tag {
@@ -310,7 +341,7 @@ section {
   min-height: 85px;
   box-sizing: border-box;
   padding: 16px 16px 16px 80px;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 1.3;
 }
@@ -320,24 +351,42 @@ section {
   top: 18px;
 }
 .social-media__tag strong {
-  font-size: 24px;
+  font-size: 22px;
   display: block;
 }
 .social-media__tag.-leaks {
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
-  left: 20px;
+  left: 0px;
+}
+@media (max-width: 770px) {
+  .social-media__tag.-leaks {
+    top: 47%;
+    left: -32px;
+  }
 }
 .social-media__tag.-brother {
   position: absolute;
-  left: 50%;
-  top: 60px;
+  left: 42%;
+  top: 78px;
+}
+@media (max-width: 770px) {
+  .social-media__tag.-brother {
+    left: 25%;
+    top: 62px;
+  }
 }
 .social-media__tag.-fakenews {
   position: absolute;
-  left: 60%;
-  top: 55%;
+  left: 52%;
+  top: 58%;
+}
+@media (max-width: 770px) {
+  .social-media__tag.-fakenews {
+    left: 44%;
+    top: 65%;
+  }
 }
 
 .top-nav {
@@ -638,6 +687,11 @@ section {
   box-sizing: border-box;
   padding: 0 160px 50px 160px;
 }
+@media (max-width: 770px) {
+  .market-cap {
+    padding: 0 60px 50px 60px;
+  }
+}
 
 .current-stage__label {
   font-size: 18px;
@@ -680,6 +734,14 @@ section {
 }
 .current-stage__subheader span {
   padding: 0 10px;
+}
+@media (max-width: 770px) {
+  .current-stage__subheader span, .current-stage__subheader img {
+    display: block;
+  }
+  .current-stage__subheader img {
+    margin: 16px auto;
+  }
 }
 
 .current-stage__meter {
@@ -856,6 +918,11 @@ section {
   display: table;
   clear: both;
 }
+@media (max-width: 770px) {
+  .roadmap-graphs {
+    width: 82%;
+  }
+}
 
 .roadmap-graphs__col {
   width: 50%;
@@ -1030,6 +1097,11 @@ section {
   padding: 0 160px;
   font-size: 45px;
   text-transform: uppercase;
+}
+@media (max-width: 770px) {
+  .true-team {
+    padding: 120px 5px 200px 14px;
+  }
 }
 
 .team-protraits {

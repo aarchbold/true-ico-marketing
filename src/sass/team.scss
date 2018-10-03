@@ -9,6 +9,9 @@
         font-size: 45px;
         text-transform: uppercase;
     }
+    @media (max-width: $breakpoint-tablet) {
+        padding: 120px 5px 200px 14px;
+    }
 }
 
 .team-protraits {

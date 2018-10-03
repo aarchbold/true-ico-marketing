@@ -120,6 +120,9 @@
         display: table;
         clear: both;
     }
+    @media (max-width: $breakpoint-tablet) {
+        width: 82%;
+    }
 }
 
 .roadmap-graphs__col {

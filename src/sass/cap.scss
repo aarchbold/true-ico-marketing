@@ -4,6 +4,9 @@
 .market-cap {
     box-sizing: border-box;
     padding: 0 160px 50px 160px;
+    @media (max-width: $breakpoint-tablet) {
+        padding: 0 60px 50px 60px;
+    }
 }
 
 .current-stage__label {
@@ -46,6 +49,14 @@
     padding: 40px 0 80px;
     span {
         padding: 0 10px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        span, img {
+            display: block;
+        }
+        img {
+            margin: 16px auto;
+        }
     }
 }
 

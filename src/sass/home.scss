@@ -42,6 +42,10 @@ body {
 .home-header__cta {
     .button {
         margin-right: 20px;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 16px;
+            padding: 14px 40px;
+        }
     }
 }
 
@@ -59,20 +63,6 @@ body {
     @media (max-width: $breakpoint-phablet) {
         text-align: center;
     }
-}
-
-.home-video {
-	// position: relative;
-	// padding-bottom: 56.25%; /* 16:9 */
-	// padding-top: 25px;
-	// height: 0;
-}
-.home-video iframe, .home-video video {
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// width: 100%;
-	// height: 100%;
 }
 
 // homepage styles
@@ -114,6 +104,12 @@ section {
         // min-height: 900px;
         bottom: -100px
     }
+    @media (max-width: $breakpoint-tablet) {
+        max-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        margin-top: 40px;
+    }
 }
 
 .presale-countdown__header {
@@ -151,6 +147,23 @@ section {
     min-height: 900px;
     background-color: white;
     z-index: 2;
+    @media (max-width: $breakpoint-tablet) {
+        min-height: 760px;
+    }
+}
+
+.home-video {
+	// position: relative;
+	// padding-bottom: 56.25%; /* 16:9 */
+	// padding-top: 25px;
+	// height: 0;
+}
+.home-video iframe, .home-video video {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
+	// height: 100%;
 }
 
 .home-video__container {
@@ -186,10 +199,9 @@ section {
         font-size: 20px;
         padding: 30px 60px 30px 0;
     }
-    // @media (max-width: 1240px) {
-    //     // min-height: 900px;
-    //     padding: 40px 160px 50px 160px;
-    // }
+    @media (max-width: $breakpoint-tablet) {
+        padding: 40px 60px 50px 60px;
+    }
     // @media (max-width: 952px) {
     //     // min-height: 900px;
     //     padding: 40px 60px 50px 60px;
@@ -206,9 +218,9 @@ section {
 
 .social-media__col {
     float: left;
-    width: 55%;
+    width: 52%;
     &:last-child {
-        width: 45%;
+        width: 48%;
     }
 }
 
@@ -220,8 +232,13 @@ section {
     .cyclist {
         position: absolute;
         bottom: -80px;
-        left: 62px;
+        left: 40px;
         width: 258px;
+        @media (max-width: $breakpoint-tablet) {
+            bottom: -85px;
+            left: -30px;
+            width: 66%;
+        }
     }
 }
 
@@ -235,7 +252,7 @@ section {
     min-height: 85px;
     box-sizing: border-box;
     padding: 16px 16px 16px 80px;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     line-height: 1.3;
     img {
@@ -244,23 +261,35 @@ section {
         top: 18px;
     }
     strong {
-        font-size: 24px;
+        font-size: 22px;
         display: block;
     }
     &.-leaks {
         position: absolute;
         top: 45%;
         transform: translateY(-50%);
-        left: 20px;
+        left: 0px;
+        @media (max-width: $breakpoint-tablet) {
+            top: 47%;
+            left: -32px;
+        }
     }
     &.-brother {
         position: absolute;
-        left: 50%;
-        top: 60px;
+        left: 42%;
+        top: 78px;
+        @media (max-width: $breakpoint-tablet) {
+            left: 25%;
+            top: 62px;
+        }
     }
     &.-fakenews {
         position: absolute;
-        left: 60%;
-        top: 55%;
+        left: 52%;
+        top: 58%;
+        @media (max-width: $breakpoint-tablet) {
+            left: 44%;
+            top: 65%;
+        }
     }
 }
