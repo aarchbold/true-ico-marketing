@@ -4,7 +4,7 @@ $.fn.initCountdown = function() {
         $counterHours = $('#counterHours',$context),
         $counterMinutes = $('#counterMinutes',$context),
         $counterSeconds = $('#counterSeconds',$context),
-        countDownDate = new Date("Oct 27, 2018 00:00:00").getTime();
+        countDownDate = new Date("Jan 27, 2019 00:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {

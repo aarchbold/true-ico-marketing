@@ -25,18 +25,7 @@
         <div class="page-container">
             <section class="home-intro">
                 <nav class="top-nav">
-                    <img src="static/images/logos/true-logo-dark.svg" />
-                    <ul class="top-nav__menu">
-                        <li class="top-nav__item">
-                            <a href="#" data-scroll-to="whatIsTrue" class="top-nav__link">What is True?</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="#" data-scroll-to="theTeam" class="top-nav__link">Team</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="#" data-scroll-to="theRoadmap" class="top-nav__link">Key Dates</a>
-                        </li>
-                    </ul>
+                    <img class="top-nav__logo" src="static/images/logos/true-logo-dark.svg" />
                     <div class="language-selector">
                         <div class="language-selector__current">
                             <span><img src="static/images/icons/us.png" class="language-selector__flag" /> EN</span>
@@ -63,8 +52,33 @@
                                 <img src="static/images/icons/china.png" class="language-selector__flag" /> CH
                                 <img src="static/images/icons/icon-check.png" class="language-selector__check" />
                             </a>
+                            
                         </div>
                     </div>
+                    <ul class="top-nav__menu">
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="whatIsTrue" class="top-nav__link">How it works</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="theTeam" class="top-nav__link">Token Sale</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="theRoadmap" class="top-nav__link">Roadmap</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="theTeam" class="top-nav__link">Team</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="theNews" class="top-nav__link">News</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" data-scroll-to="downloadApp" class="top-nav__link">Download App</a>
+                        </li>
+                        <li class="top-nav__item">
+                            <a href="#" class="button-topnav">Whitepaper</a>
+                        </li>
+                    </ul>
+                    
                 </nav>
 
                 <div class="home-header">
@@ -72,14 +86,14 @@
                         <h1>Facebook can’t be fixed, so we’re going to replace it.</h1>
                         <p>Our mission is to create a better social community that focuses on authenticity, meaningful connections, and helping the world share their experiences in a meaningful way that respects thier privacy.</p>
                         <div class="home-header__cta">
-                            <a href="#" class="button button--alt">Pre Buy Coins</a>
-                            <a href="#" class="button">Get The Whitepaper</a>
+                            <a href="#" class="button button--alt">I'm Interested, Sign Me Up</a>
+                            <!-- <a href="#" class="button">Get The Whitepaper</a> -->
                         </div>
                     </div>
 
                     <div id="countdownContainer" class="presale-countdown">
                         <div class="presale-countdown__header">Pre Sale Starts on:</div>
-                        <div class="presale-countdown__subheader">Oct 27, 2018</div>
+                        <!-- <div class="presale-countdown__subheader">Oct 27, 2018</div> -->
                         <div class="presale-countdown__counter">
                             <div class="presale-countdown__slot">
                                 <span id="counterDays">&nbsp;</span>
@@ -99,7 +113,7 @@
                             </div>
                         </div>
                         <div class="presale-countdown__cta">
-                            <a href="#" class="button">Set Reminder</a>
+                            <a href="#" class="button button--alt">Sign Up With 25% Off</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +274,7 @@
             </section>
 
             <section class="true-news">
-                <h2>True In The News</h2>
+                <h2 id="theNews">True In The News</h2>
                 <div class="news-carousel__container">
                     <a href="#" class="news-carousel__nav -previous">
                         <img src="static/images/icons/icon-left-arrow.svg" />
@@ -297,6 +311,7 @@
                                 <a href="#" class="button button-news">View Article</a>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>

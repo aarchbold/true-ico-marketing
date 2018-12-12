@@ -17,7 +17,7 @@ body {
 
 .home-header {
     color: $color-header-font;
-    padding: 40px 300px 50px 160px;
+    padding: 160px 300px 50px 160px;
     line-height: 1.2;
     z-index: 1000;
     position: relative;
@@ -31,11 +31,11 @@ body {
     }
     @media (max-width: 1240px) {
         // min-height: 900px;
-        padding: 40px 160px 50px 160px;
+        padding: 140px 160px 50px 160px;
     }
     @media (max-width: 952px) {
         // min-height: 900px;
-        padding: 40px 60px 50px 60px;
+        padding: 120px 60px 50px 60px;
     }
 }
 
@@ -113,15 +113,25 @@ section {
 }
 
 .presale-countdown__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     font-size: 20px;
+    background-color: $color-countdown-accent;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0;
+    text-transform: none;
+    font-size: 26px;
 }
 .presale-countdown__subheader {
     font-size: 36px;
-    padding: 10px 0 40px;
+    padding: 60px 0 40px;
 }
 
 .presale-countdown__counter {
     width: 100%;
+    margin-top: 80px;
     margin-bottom: 40px;
     &:after {
         content: ' ';
@@ -134,12 +144,32 @@ section {
     width: 25%;
     float: left;
     font-size: 48px;
+    span {
+        position: relative;
+        display: inline-block;
+        border-radius: 6px;
+        padding: 10px 14px;
+        background-color: $color-countdown-accent;
+        &:after {
+            content: ':';
+            position: absolute;
+            right: -21px;
+            top: 5px;
+            color: $color-countdown-accent;
+        }
+        &#counterSeconds {
+            &:after {
+                content: '';
+            }
+        }
+    }
 }
 
 .presale-countdown__label {
     margin-top: 6px;
     text-transform: uppercase;
     font-size: 14px;
+    color: $color-countdown-accent;
 }
 
 .home-video {

@@ -65,7 +65,7 @@ $.fn.fadeOnScroll = function() {
         // }
         $element.css({
             'opacity': 1 - $(window).scrollTop() / 400,
-            'transform': 'translateY('+($win.scrollTop() - $element.offset().top) / -4+'px)'
+            // 'transform': 'translateY('+($win.scrollTop() - $element.offset().top) / -4+'px)'
         });
     });
 }
