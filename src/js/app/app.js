@@ -96,7 +96,7 @@ $.fn.rotateGraphs = function() {
 $(function(){
     $('.language-selector').localizr();
     $('body').handleNav();
-    $('.home-header-scroller').fadeOnScroll();
+    // $('.home-header-scroller').fadeOnScroll();
     $('.roadmap-graphs').rotateGraphs();
 
     var $win = $(window);
