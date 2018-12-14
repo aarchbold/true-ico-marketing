@@ -20,6 +20,46 @@
     }
 }
 
+.home-main-features {
+    padding: 140px 0;
+    h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+.main-features__container {
+    background-color: $color-feature-dark;
+    .home-main-features__inner {
+        max-width: 1056px;
+        margin: 0 auto;
+        &:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
+}
+
+.feature-phone-item {
+    float: left;
+    width: 33.3%;
+    color: $color-alternate-font;
+    box-sizing: border-box;
+    padding: 20px;
+    min-height: 240px;
+    h3 {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+}
+
 .feature-row {
     &:after {
         content: '';

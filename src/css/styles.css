@@ -1714,6 +1714,46 @@ section {
   }
 }
 
+.home-main-features {
+  padding: 140px 0;
+}
+.home-main-features h2 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.main-features__container {
+  background-color: #2f482a;
+}
+.main-features__container .home-main-features__inner {
+  max-width: 1056px;
+  margin: 0 auto;
+}
+.main-features__container .home-main-features__inner:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.feature-phone-item {
+  float: left;
+  width: 33.3%;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 240px;
+}
+.feature-phone-item h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.feature-phone-item p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
 .feature-row:after {
   content: '';
   clear: both;
