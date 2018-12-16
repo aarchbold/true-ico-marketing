@@ -722,6 +722,17 @@ section {
   }
 }
 
+.download-cta {
+  padding: 60px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.download-cta h2 {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 60px;
+}
+
 .top-nav {
   position: fixed;
   width: 100%;
@@ -1025,31 +1036,32 @@ section {
 */
 .market-cap {
   box-sizing: border-box;
-  padding: 0 160px 50px 160px;
+  padding: 40px 40px 50px 40px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 @media (max-width: 770px) {
   .market-cap {
-    padding: 0 60px 50px 60px;
+    padding: 0 20px 50px 20px;
   }
+}
+.market-cap h2 {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 20px;
 }
 
 .current-stage__label {
   font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  padding-left: 10px;
+  text-align: center;
+  color: #4B49FF;
 }
 
 .current-stage {
   position: relative;
-  border-radius: 26px;
-  box-shadow: 1px 2px 20px -1px rgba(108, 73, 255, 0.4);
   box-sizing: border-box;
-  padding: 40px 100px;
+  padding: 40px 10px;
   text-align: center;
-  text-transform: uppercase;
-  z-index: 2;
-  background-color: white;
 }
 
 .current-stage__shadow {
@@ -1065,7 +1077,8 @@ section {
 }
 
 .current-stage__header {
-  font-size: 24px;
+  font-size: 26px;
+  color: #000000;
 }
 
 .current-stage__subheader {
@@ -1075,7 +1088,7 @@ section {
 .current-stage__subheader span {
   padding: 0 10px;
 }
-@media (max-width: 770px) {
+@media (max-width: 650px) {
   .current-stage__subheader span, .current-stage__subheader img {
     display: block;
   }
@@ -1086,40 +1099,39 @@ section {
 
 .current-stage__meter {
   width: 100%;
-  height: 8px;
+  height: 14px;
   border-radius: 9px;
-  background-color: #E8F7D8;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 20px -1px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
 }
 
 .current-stage__widget {
-  height: 8px;
-  width: 50%;
+  height: 14px;
+  width: 25%;
   border-radius: 9px;
-  background-color: #7ED321;
+  background-color: #4B49FF;
 }
 
 .current-stage__bullet {
-  margin-top: 26px;
+  margin-top: 16px;
   text-align: left;
 }
+.current-stage__bullet:after {
+  content: '';
+  clear: both;
+  display: table;
+}
 .current-stage__bullet li {
+  float: left;
+  width: 50%;
   position: relative;
   font-size: 18px;
-  line-height: 2.2;
-  padding-left: 20px;
+  text-align: right;
 }
-.current-stage__bullet li.-active:before {
-  background-color: #7ED321;
-}
-.current-stage__bullet li:before {
-  content: ' ';
-  position: absolute;
-  top: 14px;
-  left: 0;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: #E8F7D8;
+.current-stage__bullet li.-active {
+  color: #4B49FF;
+  text-align: left;
 }
 
 .current-stage__logo {
@@ -1507,7 +1519,7 @@ section {
 /* Roadmap styles
 */
 .roadmap {
-  padding: 160px 0;
+  padding: 60px 0;
 }
 
 .roadmap-header {
@@ -1751,7 +1763,7 @@ section {
 }
 
 .main-features__container {
-  background: #2f482a url(../images/features/cap-features.png) 0 100% no-repeat;
+  background: #2f482a url(../images/features/cap-features.png) center bottom no-repeat;
   background-size: 100%;
   padding-top: 50px;
   position: relative;
