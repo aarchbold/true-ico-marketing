@@ -5,7 +5,7 @@ button, .button {
     display: inline-block;
     width: auto;
     transition: all 0.25s;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     box-sizing: border-box;
     text-align: center;
@@ -19,6 +19,10 @@ button, .button {
     box-shadow: 1px 2px 20px -1px rgba(108,73,255,0.5);
     &:hover {
         opacity: 0.7;
+    }
+    @media (max-width: $breakpoint-phablet) {
+        padding: 14px 50px;
+        border-radius: 20px;
     }
 }
 
