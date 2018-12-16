@@ -3,13 +3,15 @@
 
 .roadmap {
     padding: 60px 0;
+    background: transparent url(../images/roadmap/bg-roadmap.png) 50% 0% no-repeat;
+    color: $color-roadmap-font;
 }
 
 .roadmap-header {
-    padding: 40px 300px 50px 160px;
+    padding: 40px 20px 50px;
     line-height: 1.2;
+    text-align: center;
     h2 {
-        text-transform: uppercase;
         font-size: 45px;
     }
     @media (max-width: 1240px) {
@@ -22,9 +24,15 @@
     }
 }
 
+.roadmap-scroller {
+    width: 100%;
+    overflow-x: auto;
+}
+
 .roadmap-map {
     position: relative;
     height: 230px;
+    min-width: 1100px;
     &:after {
         content: ' ';
         display: table;
@@ -52,7 +60,6 @@
 .roadmap-map__description {
     text-align: center;
     font-size: 16px;
-    text-transform: uppercase;
     padding-top: 40px;
     line-height: 1.2;
 }
@@ -67,35 +74,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 21px;
-    height: 21px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    border: 4px solid white;
-    background-color: $color-roadmap;
+    background-color: $color-background;
     box-shadow: 2px 3px 25px -3px rgba(108, 73, 255, 0.6);
-    &.-bullet2 {
-        width: 26px;
-        height: 26px;
-    }
-    &.-bullet3 {
-        width: 30px;
-        height: 30px;
-    }
-    &.-bullet4 {
-        width: 36px;
-        height: 36px;
-    }
-    &.-bullet5 {
-        width: 46px;
-        height: 46px;
-    }
-    &.-bullet6 {
-        width: 56px;
-        height: 56px;
-    }
-    &.-bullet7 {
-        width: 84px;
-        height: 84px;
+    text-align: center;
+    img {
+        position: relative;
+        top: 10px;
     }
 }
 
@@ -105,7 +92,7 @@
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    border-top: 1px solid $color-roadmap;
+    border-top: 1px solid $color-background;
 }
 
 .roadmap-graphs__container {
@@ -113,15 +100,16 @@
 }
 
 .roadmap-graphs {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    max-width: 860px;
     &:after {
         content: ' ';
         display: table;
         clear: both;
     }
     @media (max-width: $breakpoint-tablet) {
-        width: 82%;
+        width: 100%;
     }
 }
 
@@ -130,12 +118,41 @@
     float: left;
     box-sizing: border-box;
     padding: 20px;
+    box-sizing: border-box;
     h3 {
         text-align: center;
-        font-size: 24px;
-        text-transform: uppercase;
+        font-size: 32px;
         padding-bottom: 50px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (max-width: $breakpoint-tablet) {
+            position: relative;
+            top: auto;
+            padding-bottom: 24px;
+            font-size: 26px;
+        }
+        @media (max-width: $breakpoint-phablet) {
+            float: none;
+            width: 100%;
+            position: absolute;
+            top: 28%;
+        }
     }
+    @media (max-width: $breakpoint-phablet) {
+        float: none;
+        width: 100%;
+    }
+}
+
+.roadmap-graphs__inner {
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    background-color: $color-background;
+    box-shadow: 2px 3px 25px -3px rgba(0, 0, 0, 0.2);
+    padding: 40px;
 }
 
 .roadmap-graphs__svg {
@@ -144,62 +161,64 @@
 }
 
 .roadmap-graphs__ul {
-    margin-top: 100px;
-    li {
-        line-height: 2.8;
-    }
-}
-
-.roadmap-graphs__ul--right {
+    margin-top: 25px;
+    text-align: left;
     li {
         position: relative;
-        padding-left: 40px;
+        line-height: 2;
+        padding-left: 28px;
+        padding-right: 35px;
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
         &:before {
             content: ' ';
             position: absolute;
             left: 0;
-            top: 10px;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
+            top: 9px;
+            width: 14px;
+            height: 14px;
         }
     }
 }
 
+
 .roadmap-graphs__item {
     &.-red {
         &:before {
-            border: 3px solid #FF496F;
+            background-color: #371e80;
         }
     }
     &.-blue {
         &:before {
-            border: 3px solid #4B49FF;
+            background-color: #6e69ff;
         }
     }
     &.-lightblue {
         &:before {
-            border: 3px solid #3EAEFF;
+            background-color: #7d52da;
         }
     }
     &.-lightgreen {
         &:before {
-            border: 3px solid #7ED321;
+            background-color: #51ceba;
         }
     }
     &.-darkgreen {
         &:before {
-            border: 3px solid #26CE93;
+            background-color: #68b1ff;
         }
     }
     &.-yellow {
         &:before {
-            border: 3px solid #F8E71C;
+            background-color: #ee9252;
         }
     }
     &.-grey {
         &:before {
-            border: 3px solid #9B9B9B;
+            background-color:#9B9B9B;
         }
     }
 }
