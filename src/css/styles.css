@@ -814,6 +814,11 @@ section {
   background-color: #e1fbff;
   z-index: 10000;
 }
+@media (max-width: 1000px) {
+  .top-nav {
+    padding: 34px 30px;
+  }
+}
 
 .top-nav__logo {
   position: absolute;
@@ -905,6 +910,11 @@ section {
     right: 68px;
     font-size: 18px;
     text-align: right;
+  }
+}
+@media (max-width: 650px) {
+  .language-selector {
+    top: 18px;
   }
 }
 
@@ -1003,7 +1013,7 @@ section {
   .language-selector__layer {
     width: 100%;
     top: 24px;
-    right: 0;
+    right: -69px;
     border-radius: 0px;
     box-sizing: border-box;
     padding: 0;
@@ -1065,6 +1075,7 @@ section {
 }
 .mobile-nav-toggle .-close {
   display: none;
+  top: 22px;
 }
 @media (max-width: 1000px) {
   .mobile-nav-toggle {

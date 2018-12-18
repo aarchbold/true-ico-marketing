@@ -8,6 +8,9 @@
     font-size: 14px;
     background-color: #e1fbff;
     z-index: 10000;
+    @media (max-width: 1000px) {
+        padding: 34px 30px
+    }
 }
 
 .top-nav__logo {
@@ -111,6 +114,9 @@
         font-size: 18px;
         text-align: right;
     }
+    @media (max-width: 650px) {
+        top: 18px;
+    }
 }
 
 .language-selector__current {
@@ -198,7 +204,7 @@
     @media (max-width: $breakpoint-phablet) {
         width: 100%;
         top: 24px;
-        right: 0;
+        right: -69px;
         border-radius: 0px;
         box-sizing: border-box;
         padding: 0;
@@ -257,6 +263,7 @@
     cursor: pointer;
     .-close {
         display: none;
+        top: 22px;
     }
     @media (max-width: 1000px) {
         display: block;
