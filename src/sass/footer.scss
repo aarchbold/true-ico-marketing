@@ -4,6 +4,7 @@
 .site-footer {
     // padding: 0 160px 40px;
     // box-sizing: border-box;
+    background: transparent url(../images/bgs/bg-main-footer.png) 50% 50% no-repeat;
     position: relative;
     h2 {
         text-align: center;
@@ -14,9 +15,15 @@
 
 .site-footer__inner {
     text-align: center;
-    padding: 100px 160px 580px;
+    padding: 100px 160px 400px;
     a {
         margin: 0 8px;
+    }
+    @media (max-width: $breakpoint-tablet) {
+        padding: 100px 10px 300px;
+    }
+    @media (max-width: 600px) {
+        padding: 100px 10px 280px;
     }
 }
 
@@ -83,6 +90,9 @@
     position: relative;
     z-index: 100;
     padding: 0 160px 20px;
+    @media (max-width: 800px) {
+        padding: 0 20px 20px;
+    }
 }
 
 .footer-social__item {
@@ -91,11 +101,20 @@
     &:hover {
         opacity: 0.8;
     }
+    @media (max-width: 600px) {
+        margin-right: 10px;
+        img {
+            width: 30px;
+        }
+    }
 }
 
 .footer-legal {
     position: relative;
     padding: 20px 0;
+    @media (max-width: 1080px) {
+        padding: 0;
+    }
 }
 
 .footer-app__links {
@@ -104,6 +123,9 @@
     top: 20px;
     a {
         margin-left: 20px;
+    }
+    @media (max-width: 1080px) {
+        display: none;
     }
 }
 
@@ -139,6 +161,21 @@
                 transform: scaleX(1);
             }
         }
+    }
+    @media (max-width: 1080px) {
+        text-align: center;
+    }
+    @media (max-width: 600px) {
+        a {
+            font-size: 12px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.footer-social {
+    @media (max-width: 1080px) {
+        text-align: center;
     }
 }
 

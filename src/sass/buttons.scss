@@ -44,4 +44,8 @@ button, .button {
     color: $color-main-font;
     text-decoration: none;
     text-transform: uppercase;
+    @media (max-width: 1000px) {
+        text-transform: none;
+        font-size: 20px;
+    }
 }

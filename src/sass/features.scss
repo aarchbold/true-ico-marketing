@@ -21,6 +21,9 @@
     @media (max-width: $breakpoint-phablet) {
         padding-top: 160px;
     }
+    @media (max-width: 700px) {
+        padding-top: 60px;
+    }
 }
 
 .home-main-features {
@@ -96,6 +99,9 @@
         float: none;
         width: 100%;
     }
+    @media (max-width: 700px) {
+        padding: 0 0;
+    }
 }
 
 .feature-item__header {
@@ -159,6 +165,9 @@
     position: relative;
     margin: 60px auto;
     max-width: 700px;
+    @media (max-width: 775px) {
+        margin: 60px 10px 0;
+    }
 }
 
 .phone-1 {
@@ -168,6 +177,12 @@
     z-index: 1;
     img {
         max-width: 218px;
+        @media (max-width: 775px) {
+            max-width: 170px;
+        }
+        @media (max-width: 470px) {
+            max-width: 130px;
+        }
     }
 }
 
@@ -178,6 +193,12 @@
     z-index: 1;
     img {
         max-width: 218px;
+        @media (max-width: 775px) {
+            max-width: 170px;
+        }
+        @media (max-width: 470px) {
+            max-width: 130px;
+        }
     }
 }
 
@@ -188,6 +209,12 @@
     z-index: 5;
     img {
         max-width: 246px;
+        @media (max-width: 775px) {
+            max-width: 184px;
+        }
+        @media (max-width: 470px) {
+            max-width: 145px;
+        }
     }
 }
 
@@ -198,6 +225,12 @@
     z-index: 5;
     img {
         max-width: 246px;
+        @media (max-width: 775px) {
+            max-width: 184px;
+        }
+        @media (max-width: 470px) {
+            max-width: 145px;
+        }
     }
 }
 
@@ -207,6 +240,12 @@
     z-index: 10;
     img {
         max-width: 267px;
+        @media (max-width: 775px) {
+            max-width: 200px;
+        }
+        @media (max-width: 470px) {
+            max-width: 165px;
+        }
     }
     &.phone-bring-to-front {
         z-index: 100;

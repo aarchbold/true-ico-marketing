@@ -18,17 +18,29 @@
 .top-nav__menu {
     float: right;
     margin-right: 40px;
-    @media (max-width: $breakpoint-phablet) {
+    @media (max-width: 1000px) {
         display: none;
+        float: none;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 94%;
+        max-width: 400px;
+        background-color: white;
+        margin-right: 0;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 1px 1px 40px 1px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
     }
 }
 
 .top-nav__item {
     position: relative;
-    margin-left: 25px;
+    margin-left: 20px;
     transition: all 0.2s;
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     color: $color-main-font;
     .top-nav__link, .language-selector__current {
         font-size: 14px;
@@ -54,19 +66,48 @@
             }
         }
     }
+    @media (max-width: 1000px) {
+        width: auto;
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding: 2px 20px;
+        .top-nav__link, .language-selector__current {
+            font-size: 20px;
+            text-transform: none;
+            //padding: 5px 20px;
+            &:hover, &:active {
+                &:before {
+                    visibility: hidden !important;
+                    //transform: scaleX(1);
+                }
+            }
+        }
+    }
 }
 
 .language-selector {
     position: relative;
     cursor: pointer;
     float: right;
-    @media (max-width: $breakpoint-phablet) {
+    // @media (max-width: $breakpoint-phablet) {
+    //     position: absolute;
+    //     right: 30px;
+    //     top: 20px;
+    //     font-size: 16px;
+    //     width: 100%;
+    //     right: 0;
+    //     font-size: 18px;
+    //     text-align: right;
+    // }
+    @media (max-width: 1000px) {
         position: absolute;
-        right: 30px;
-        top: 20px;
+        top: 25px;
         font-size: 16px;
         width: 100%;
-        right: 0;
+        right: 68px;
         font-size: 18px;
         text-align: right;
     }
@@ -205,5 +246,19 @@
         font-size: 22px;
         border-bottom: 1px solid #C7C6C6;
         text-align: center;
+    }
+}
+
+.mobile-nav-toggle {
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    cursor: pointer;
+    .-close {
+        display: none;
+    }
+    @media (max-width: 1000px) {
+        display: block;
     }
 }
