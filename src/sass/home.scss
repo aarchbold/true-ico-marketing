@@ -230,6 +230,8 @@ section {
 }
 
 .social-media {
+    background: transparent url(../images/bgs/bg-social-networking.png) 50% 50% no-repeat;
+    background-size: cover;
     padding: 40px 160px;
     line-height: 1.2;
     z-index: 1000;
@@ -269,17 +271,20 @@ section {
         width: 48%;
     }
     p {
+        color: $color-alternate-header-font;
         text-align: center;
         font-size: 22px;
         padding-top: 140px;
     }
 }
 
+.social-media__header {
+    color: $color-alternate-header-font;
+}
+
 .social-media__infographic {
     position: relative;
     height: 510px;
-    background: url(../images/bgs/bg-social-media.png) 50% 50% no-repeat;
-    background-size: 100%;
     .cyclist {
         position: absolute;
         bottom: -80px;

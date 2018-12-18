@@ -618,6 +618,8 @@ section {
 }
 
 .social-media {
+  background: transparent url(../images/bgs/bg-social-networking.png) 50% 50% no-repeat;
+  background-size: cover;
   padding: 40px 160px;
   line-height: 1.2;
   z-index: 1000;
@@ -655,16 +657,19 @@ section {
   width: 48%;
 }
 .social-media__col p {
+  color: #000000;
   text-align: center;
   font-size: 22px;
   padding-top: 140px;
 }
 
+.social-media__header {
+  color: #000000;
+}
+
 .social-media__infographic {
   position: relative;
   height: 510px;
-  background: url(../images/bgs/bg-social-media.png) 50% 50% no-repeat;
-  background-size: 100%;
 }
 .social-media__infographic .cyclist {
   position: absolute;
@@ -1465,49 +1470,79 @@ section {
 }
 .team-portraits__item--image.-bret {
   background: transparent url(../images/portraits/bret.jpg) 50% 50% no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 .team-portraits__item--image.-dmitri {
-  left: 2px;
-  top: -2px;
+  left: 0;
+  top: 0;
   background: transparent url(../images/portraits/dmitri.jpg) 50% 50% no-repeat;
   background-size: 100%;
 }
 .team-portraits__item--image.-ilya {
-  left: -11px;
-  top: 1px;
+  left: 0;
+  top: 0;
   background: transparent url(../images/portraits/ilya.jpg) 50% 50% no-repeat;
-  background-size: 132%;
+  background-size: 100%;
 }
 .team-portraits__item--image.-stanislav {
-  left: -5px;
-  top: -11px;
+  left: 0;
+  top: 0;
   background: transparent url(../images/portraits/stanislav.jpg) 50% 50% no-repeat;
   background-size: 100%;
 }
 .team-portraits__item--image.-ryan {
-  left: 5px;
-  top: -9px;
+  left: 0px;
+  top: 0px;
   background: transparent url(../images/portraits/ryan.jpg) 50% 50% no-repeat;
   background-size: 122%;
 }
 .team-portraits__item--image.-roman {
   left: 0px;
-  top: -5px;
+  top: 0px;
   background: transparent url(../images/portraits/roman.jpg) 50% 50% no-repeat;
-  background-size: 120%;
+  background-size: 100%;
 }
 .team-portraits__item--image.-rustam {
-  left: 0px;
-  top: -5px;
+  left: 0;
+  top: 0;
   background: transparent url(../images/portraits/rustam.jpg) 50% 50% no-repeat;
-  background-size: 120%;
+  background-size: 115%;
 }
 .team-portraits__item--image.-kori {
   left: 0px;
-  top: -5px;
+  top: 0;
   background: transparent url(../images/portraits/kori.jpg) 50% 50% no-repeat;
   background-size: 120%;
+}
+.team-portraits__item--image.-helen {
+  left: 0px;
+  top: 0;
+  background: transparent url(../images/portraits/helen.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.team-portraits__item--image.-pjotr {
+  left: 0px;
+  top: 0;
+  background: transparent url(../images/portraits/pjotr.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.team-portraits__item--image.-juri {
+  left: 0;
+  top: 0;
+  background: transparent url(../images/portraits/juri.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.team-portraits__item--image.-oxana {
+  left: 0;
+  top: 0;
+  background: transparent url(../images/portraits/oxana.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.team-portraits__item--image.-anna {
+  left: 0;
+  top: 0;
+  background: transparent url(../images/portraits/anna.jpg) 50% 50% no-repeat;
+  background-size: 100%;
 }
 
 .team-portraits__row:after {

@@ -118,49 +118,79 @@
     border-radius: 8px 8px 0 0;
     &.-bret {
         background: transparent url(../images/portraits/bret.jpg) 50% 50% no-repeat;
-        background-size: cover;
+        background-size: 100%;
     }
     &.-dmitri {
-        left: 2px;
-        top: -2px;
+        left: 0;
+        top: 0;
         background: transparent url(../images/portraits/dmitri.jpg) 50% 50% no-repeat;
         background-size: 100%;
     }
     &.-ilya {
-        left: -11px;
-        top: 1px;
+        left: 0;
+        top: 0;
         background: transparent url(../images/portraits/ilya.jpg) 50% 50% no-repeat;
-        background-size: 132%;
+        background-size: 100%;
     }
     &.-stanislav {
-        left: -5px;
-        top: -11px;
+        left: 0;
+        top: 0;
         background: transparent url(../images/portraits/stanislav.jpg) 50% 50% no-repeat;
         background-size: 100%;
     }
     &.-ryan {
-        left: 5px;
-        top: -9px;
+        left: 0px;
+        top: 0px;
         background: transparent url(../images/portraits/ryan.jpg) 50% 50% no-repeat;
         background-size: 122%;
     }
     &.-roman {
         left: 0px;
-        top: -5px;
+        top: 0px;
         background: transparent url(../images/portraits/roman.jpg) 50% 50% no-repeat;
-        background-size: 120%;
+        background-size: 100%;
     }
     &.-rustam {
-        left: 0px;
-        top: -5px;
+        left: 0;
+        top: 0;
         background: transparent url(../images/portraits/rustam.jpg) 50% 50% no-repeat;
-        background-size: 120%;
+        background-size: 115%;
     }
     &.-kori {
         left: 0px;
-        top: -5px;
+        top: 0;
         background: transparent url(../images/portraits/kori.jpg) 50% 50% no-repeat;
         background-size: 120%;
+    }
+    &.-helen {
+        left: 0px;
+        top: 0;
+        background: transparent url(../images/portraits/helen.jpg) 50% 50% no-repeat;
+        background-size: 100%;
+    }
+    &.-pjotr {
+        left: 0px;
+        top: 0;
+        background: transparent url(../images/portraits/pjotr.jpg) 50% 50% no-repeat;
+        background-size: 100%;
+    }
+    &.-juri {
+        left: 0;
+        top: 0;
+        background: transparent url(../images/portraits/juri.jpg) 50% 50% no-repeat;
+        background-size: 100%;
+    }
+    &.-oxana {
+        left: 0;
+        top: 0;
+        background: transparent url(../images/portraits/oxana.jpg) 50% 50% no-repeat;
+        background-size: 100%;
+    }
+    &.-anna {
+        left: 0;
+        top: 0;
+        background: transparent url(../images/portraits/anna.jpg) 50% 50% no-repeat;
+        background-size: 100%;
     }
 }
 
